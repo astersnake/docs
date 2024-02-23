@@ -37,25 +37,25 @@
     {
       "group": "service",
       "pages": [
-        "api-reference/service/retrieve-all-active-services"
+        "api-reference/service/index-active-services"
       ]
     },
     {
       "group": "store",
       "pages": [
-        "api-reference/store/handle-the-request-to-index-and-list-stores"
+        "api-reference/store/index-stores"
       ]
     },
     {
       "group": "order",
       "pages": [
-        "api-reference/order/handle-the-order-label-retrieval",
-        "api-reference/order/retrieves-the-state-transition-history-from-an-order",
-        "api-reference/order/retrieve-the-proof-of-transfers-for-an-order",
-        "api-reference/order/retrieve-the-labels-for-the-provided-tracking-numbers",
-        "api-reference/order/store-a-new-order",
-        "api-reference/order/display-a-specific-order-by-its-identifier",
-        "api-reference/order/retrieve-the-list-of-orders"
+        "api-reference/order/get-order-label",
+        "api-reference/order/get-order-state-history",
+        "api-reference/order/get-proofs-of-delivery",
+        "api-reference/order/get-multiple-orders-label",
+        "api-reference/order/create-order",
+        "api-reference/order/show-order",
+        "api-reference/order/index-orders"
       ]
     }
   ]

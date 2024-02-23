@@ -15,7 +15,7 @@
                 "tags": [
                     "service"
                 ],
-                "summary": "Retrieve all active services.",
+                "summary": "Index active services",
                 "description": "Returns a paginated list of active services.",
                 "responses": {
                     "200": {
@@ -74,7 +74,7 @@
                 "tags": [
                     "store"
                 ],
-                "summary": "Handle the request to index and list stores.",
+                "summary": "Index stores",
                 "description": "Retrieves a list of stores related with the authenticated merchant.",
                 "responses": {
                     "200": {
@@ -133,7 +133,7 @@
                 "tags": [
                     "order"
                 ],
-                "summary": "Handle the order label retrieval.",
+                "summary": "Get order label",
                 "description": "Retrieves the label for an order based on the provided order identifier.",
                 "parameters": [
                     {
@@ -334,7 +334,7 @@
                 "tags": [
                     "order"
                 ],
-                "summary": "Retrieves the state transition history from an order.",
+                "summary": "Get order state history",
                 "description": "Retrieves the state transition history for an order based on the provided order identifier.",
                 "parameters": [
                     {
@@ -477,12 +477,12 @@
                 }
             }
         },
-        "\/api\/v1\/orders\/{orderIdentifier}\/proofOfTransfers": {
+        "\/api\/v1\/orders\/{orderIdentifier}\/proofOfDelivery": {
             "get": {
                 "tags": [
                     "order"
                 ],
-                "summary": "Retrieve the proof of transfers for an order.",
+                "summary": "Get proofs of delivery",
                 "description": "Retrieves full information for the proof of transfers of an order based on the provided order identifier.",
                 "parameters": [
                     {
@@ -640,7 +640,7 @@
                 "tags": [
                     "order"
                 ],
-                "summary": "Retrieve the labels for the provided tracking numbers.",
+                "summary": "Get multiple orders label",
                 "description": "Retrieves the labels for the provided tracking numbers.",
                 "parameters": [
                     {
@@ -841,7 +841,7 @@
                 "tags": [
                     "order"
                 ],
-                "summary": "Store a new order.",
+                "summary": "Create order",
                 "description": "Stores a new order based on the provided request data.",
                 "requestBody": {
                     "description": "Create new order request body",
@@ -1106,7 +1106,7 @@
                 "tags": [
                     "order"
                 ],
-                "summary": "Display a specific order by its identifier.",
+                "summary": "Show order",
                 "description": "Retrieves full information of an order based on the provided order identifier.",
                 "parameters": [
                     {
@@ -1212,7 +1212,7 @@
                 "tags": [
                     "order"
                 ],
-                "summary": "Retrieve the list of orders.",
+                "summary": "Index orders",
                 "description": "Retrieves the list of orders that belong to the authenticated requester.",
                 "responses": {
                     "200": {
