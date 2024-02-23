@@ -3,31 +3,24 @@ title: 'Introduction'
 description: 'Example section for showcasing API endpoints'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+# Authentication
 
-## Welcome
+Welcome to the authentication section of the Método Logística API. To protect your data and ensure the security of our operations, authentication is a fundamental requirement for accessing our API.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+To authenticate, you must use an access token. This token is used in your requests to the API and is essential to ensure that only authorized users have access to the corresponding information and operations.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+In this section, we will provide you with all the necessary information to generate and use your token. Let's get started!
 
-## Authentication
+### Bearer Token
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+To access the Método Logística API, you must use your access token (Bearer Token) included in the authorization header of your requests, which you can find in the "API settings" section in your client panel. Below we will show you how to add the token to the request header using cURL:
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+```bash Example request using Bearer Token
+curl $base_url/api/v1/orders \
+  -H "Authorization: Bearer {token}"
 ```
+Always keep your token secure and reset it if you suspect it has been compromised. We recommend taking additional measures to protect your token and ensure the integrity of your account.
+
+<Note>
+To request your access token, please contact area.ti@metodologistica.cl.
+</Note>
