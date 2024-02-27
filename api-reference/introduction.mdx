@@ -1,4 +1,5 @@
 ---
+
 title: 'Introduction'
 description: 'Example section for showcasing API endpoints'
 ---
@@ -15,12 +16,24 @@ In this section, we will provide you with all the necessary information to gener
 
 To access the Método Logística API, you must use your access token (Bearer Token) included in the authorization header of your requests, which you can find in the "API settings" section in your client panel. Below we will show you how to add the token to the request header using cURL:
 
-```bash Example request using Bearer Token
+```bash
+Example request using Bearer Token
 curl $base_url/api/v1/orders \
   -H "Authorization: Bearer {token}"
 ```
+
 Always keep your token secure and reset it if you suspect it has been compromised. We recommend taking additional measures to protect your token and ensure the integrity of your account.
 
 <Note>
 To request your access token, please contact area.ti@metodologistica.cl.
 </Note>
+
+# Development Endpoint
+
+For development purposes, please use the following endpoint:
+
+```
+https://api-dev.metodologistica.cl/api/v1
+```
+
+This development endpoint allows you to test your integration with the Método Logística API in a sandbox environment, ensuring that your application functions correctly before going live.
